@@ -1,0 +1,1024 @@
+/*
+
+	style.css
+
+*/
+
+/* ========================================================================== */
+/* -------------------------------------------------------------------------- */
+/* # Document */
+/* -------------------------------------------------------------------------- */
+/* ========================================================================== */
+
+html {
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #223;
+}
+
+div {
+	box-sizing: border-box;
+}
+
+input,
+button {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+}
+
+button[disabled] {
+	pointer-events: none;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+a:focus,
+div:focus,
+input:focus,
+button:focus {
+	outline: none;
+}
+
+/* ========================================================================== */
+/* -------------------------------------------------------------------------- */
+/* # Generics */
+/* -------------------------------------------------------------------------- */
+/* ========================================================================== */
+
+.panel {
+	float: left;
+	width: 1100px;
+	min-height: 740px;
+	margin: 40px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: cadetblue;
+}
+
+.panel:nth-child(3) {
+	clear: left;
+}
+
+.panel h2 {
+	font-size: 400%;
+	text-align: center;
+	color: white;
+	width: auto;
+	height: 160px;
+	margin: 10px;
+	line-height: 160px;
+	border-radius: 10px;
+	background-color: darkslategray;
+}
+
+.sheet {
+	display: grid;
+	position: relative;
+	float: left;
+	width: 160px;
+	height: 160px;
+	margin: 10px;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	text-align: center;
+	border-radius: 10px;
+	background-color: aliceblue;
+}
+
+.sheet span {
+	display: inline-block;
+	max-width: 140px;
+	margin: auto;
+	padding: 10px;
+}
+
+.sheet:before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* # List */
+/* -------------------------------------------------------------------------- */
+
+.list {
+	display: inline-block;
+	position: absolute;
+	width: 474px; /* TEMP */
+	height: 474px; /* TEMP */
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border: 3px solid aliceblue;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	box-sizing: content-box;
+	z-index: 2;
+}
+
+.list:focus {
+	border-color: yellow;
+}
+
+.list .panel {
+	width: inherit;
+	margin: 0;
+	color: white;
+	border-radius: 5px;
+	background: rgba(48,96,96,.625);
+}
+
+.list .panel:after {
+	content: '';
+	display: block;
+	height: 20px;
+	/* background-color: rgba(255,0,0,.5); */
+}
+
+.list .sheet {
+	display: inline-block;
+	float: none;
+	width: 95%;
+	height: 22px;
+	margin: 4px 0;
+	overflow: initial;
+	background-color: transparent;
+}
+
+.list .sheet span {
+	max-width: initial;
+	width: 100%;
+	padding: 2px 8px;
+	overflow: hidden;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	box-sizing: border-box;
+}
+
+.list .sheet:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	top: -4px;
+	left: 0;
+	border-radius: unset;
+	/* background-color: rgba(255,255,0,.5); */
+}
+
+/* -------------------------------------------------------------------------- */
+/* # Conditions */
+/* -------------------------------------------------------------------------- */
+
+.panel.disable {
+	opacity: .375;
+}
+
+.list .panel .sheet.hilite {
+	background-color: rgba(0,0,0,.375);
+}
+
+.panel.active,
+.panel.active h2 {
+	background-color: crimson;
+}
+
+.sheet.active,
+.list .panel .sheet.active {
+	color: black;
+	background-color: yellow;
+}
+
+.edit .sheet,
+.edit .list .panel .sheet {
+	color: black;
+	background-color: yellow;
+	text-shadow: none;
+}
+
+.edit .panel .sheet.hilite {
+	cursor: pointer;
+	color: white;
+	background-color: crimson;
+}
+
+/* -------------------------------------------------------------------------- */
+/* # Buttons */
+/* -------------------------------------------------------------------------- */
+
+.button {
+	display: inline-block;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	font-size: 40px;
+	color: aliceblue;
+	background-color: transparent;
+	border: 3px solid transparent;
+}
+
+.button:before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	width: 60px;
+	height: 60px;
+}
+
+.button span {
+	display: table-cell;
+	width: inherit;
+	font-size: inherit;
+	text-align: center;
+	vertical-align: middle;
+	opacity: .375;
+}
+
+.button svg {
+	pointer-events: none;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 40px;
+	height: 40px;
+	fill: aliceblue;
+}
+
+.button.active span,
+.button:focus span,
+.button:hover span {
+	opacity: 1;
+}
+
+.button:hover {
+	color: aliceblue;
+	background-color: rgba(255,255,255,.1875);
+}
+
+.button:hover svg {
+	fill: aliceblue;
+}
+
+.button.active {
+	color: darkslategrey;
+	border-color: transparent;
+	background-color: aliceblue;
+}
+
+.button.active svg {
+	fill: darkslategrey;
+}
+
+.button:focus {
+	color: black;
+	border-color: transparent;
+	background-color: yellow;
+}
+
+.button:focus svg {
+	fill: black;
+}
+
+.button[disabled] {
+	opacity: .5;
+}
+
+/* -------------------------------------------------------------------------- */
+/* # Modal */
+/* -------------------------------------------------------------------------- */
+
+.modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	color: white;
+	background-color: rgba(0,0,0,.875);
+	z-index: 10;
+}
+
+.modal .caption {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 12.5%;
+	min-height: 60px;
+}
+
+.modal .caption span {
+	display: table-cell;
+	font-size: 2rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.modal .wrapper {
+	display: inline-block;
+	position: absolute;
+	top: 12.5%;
+	left: 12.5%;
+	width: 75%;
+	height: 75%;
+	max-height: 75%;
+	min-width: 240px;
+	min-height: 240px;
+	overflow: hidden;
+}
+
+.modal .close {
+	cursor: default;
+	right: 0;
+	top: 0;
+	font-size: 3rem;
+}
+
+/* ========================================================================== */
+/* -------------------------------------------------------------------------- */
+/* # Uniques */
+/* -------------------------------------------------------------------------- */
+/* ========================================================================== */
+
+#label,
+#topic,
+#bulb,
+#roster,
+#tribar,
+#menu,
+#frame,
+#lock,
+#backdrop,
+#screenshot,
+#help {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	/*! user-select: none; */
+}
+
+#bulb,
+#tribar,
+#create,
+#delete,
+#lock {
+	cursor: default;
+}
+
+#sheet {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .875;
+	box-shadow: 2px 2px 6px rgba(0,0,0,.25);
+	z-index: 5;
+}
+
+#sheet.translucid {
+	opacity: .4375;
+}
+
+#label {}
+
+#label div,
+#label .stalk {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+
+#label div {
+	padding: .5rem 1.375rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: white;
+	border-radius: 2.5rem;
+	background-color: rgba(32,32,32,.75);
+}
+
+#label .stalk {
+	width: .5rem;
+	height: .5rem;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 1.5rem .5rem;
+	border-top-color: rgba(32,32,32,.75);
+	box-sizing: border-box;
+}
+
+#label .stalk.reverse {
+	border-top-color: transparent;
+	border-bottom-color: rgba(32,32,32,.75);
+}
+
+#label input {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+	text-align: center;
+	border: 0;
+	background-color: transparent;
+}
+
+#label .button {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: -50px;
+	font-size: 30px;
+	border-radius: 100%;
+	background-color: rgba(32,32,32,.75);
+}
+
+#label .button:before {
+	top: -3px;
+	left: -3px;
+	width: 40px;
+	height: 40px;
+}
+
+#label .button:hover {
+	border-color: transparent;
+}
+
+#label .button:focus {
+	color: white;
+}
+
+#label .button.reverse {
+	right: unset;
+	left: -50px;
+}
+
+#record {}
+#commit {top: -30px;}
+#cancel {bottom: -30px;}
+
+#commit:hover,
+#commit:focus {background-color: mediumseagreen;}
+#cancel:hover,
+#cancel:focus {background-color: crimson;}
+
+#label .outer {
+	top: -2.5rem;
+	left: 0;
+	color: transparent;
+	background-color: transparent;
+}
+
+#label .inner {
+	display: inline-block;
+	white-space: nowrap;
+	color: inherit;
+	background-color: inherit;
+}
+
+#topic {
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 80px;
+	height: 60px;
+	line-height: 60px;
+	margin: 0;
+	padding: 0 20px 0 10px;
+	color: white;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 60px;
+	z-index: 2;
+}
+
+.edit #topic {
+	color: black;
+	background-color: yellow;
+	text-shadow: none;
+}
+
+.edit #topic.hilite {
+	cursor: pointer;
+	color: white;
+	background-color: crimson;
+}
+
+#bulb {
+	top: 20px;
+	left: 20px;
+}
+
+#tribar {
+	top: 20px;
+	right: 20px;
+}
+
+#bulb,
+#tribar {
+	z-index: 3;
+}
+
+#bulb:hover,
+#tribar:hover,
+#bulb:focus,
+#tribar:focus,
+#bulb.active,
+#tribar.active {
+	text-shadow: none;
+}
+
+#slider {
+	display: inline-block;
+	position: absolute;
+	width: 10px;
+	height: inherit;
+	top: 0;
+	right: -10px;
+	border-left: 5px solid transparent;
+	background-color: rgba(255,255,0,.25);
+	background-color: transparent;
+	transition: opacity .5s;
+	opacity: 0;
+	z-index: 3;
+}
+
+#slider.hilite {
+	cursor: ew-resize;
+	border-left-color: crimson;
+	opacity: 1;
+}
+
+#slider.active {
+	border-left-color: mediumseagreen;
+	opacity: 1;
+}
+
+#roster {
+	position: absolute;
+	width: 480px;
+	height: 480px;
+	top: 80px;
+	left: 20px;
+}
+
+#toolbar {
+	pointer-events: none;
+	display: inline-block;
+	position: absolute;
+	width: inherit;
+	height: 50px;
+	bottom: -23.5px;
+	left: 0;
+	z-index: 4;
+}
+
+#toolbar .button {
+	width: 50px;
+	height: 50px;
+	color: lightcoral;
+	border-radius: 100%;
+	border-color: aliceblue;
+	background-color: crimson;
+}
+
+#toolbar .button:before {
+	width: 50px;
+	height: 50px;
+}
+
+#toolbar .button svg {
+	width: 30px;
+	height: 30px;
+	fill: lightcoral;
+}
+
+#toolbar .button span {
+	opacity: 1;
+}
+
+#toolbar .button:hover {
+	color: aliceblue;
+	border-color: aliceblue;
+}
+
+#toolbar .button:hover svg {
+	fill: aliceblue;
+}
+
+#toolbar .button.active {
+	color: darkslategrey;
+	background-color: aliceblue;
+}
+
+#toolbar .button.active svg {
+	fill: darkslategrey;
+}
+
+#toolbar .button:focus {
+	color: black;
+	border-color: yellow;
+	background-color: yellow;
+}
+
+#toolbar .button:focus svg {
+	fill: black;
+}
+
+#toolbar .button[disabled] {
+	color: aliceblue;
+	background-color: grey;
+	opacity: 1;
+}
+
+#toolbar .button[disabled] svg {
+	fill: aliceblue;
+}
+
+#create,
+#edit,
+#delete {
+	pointer-events: all;
+}
+
+#toolbar #create {
+	left: 30px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+#toolbar #edit {
+	left: 77px;
+	border-left: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#delete {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 120px;
+	height: 120px;
+	z-index: 2;
+}
+
+#delete button {
+	right: 20px;
+	top: 20px;
+	z-index: 2;
+}
+
+#delete.active button {
+	top: 0;
+	right: 0;
+	width: 180px;
+	height: 180px;
+	border-style: dashed;
+	border-color: white;
+	background-color: rgba(255,255,255,.375);
+}
+
+#delete.active svg {
+	top: 10px;
+	left: 10px;
+	width: 154px;
+	height: 154px;
+}
+
+#menu {
+	position: absolute;
+	min-width: 180px;
+	top: 80px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	list-style: none;
+	border: 3px solid aliceblue;
+	background-color: black;
+	background-color: rgba(32,32,32,.75);
+	z-index: 2;
+}
+
+#menu li {
+	position: relative;
+	margin: 0;
+	margin-left: 0;
+	padding: 0;
+	padding-left: 3px;
+	font-size: .9375rem;
+	font-weight: bolder;
+	border: 9px solid transparent;
+	border-top: 0;
+	border-bottom: 0;
+	background-color: rgba(255,255,0,.25);
+	background-color: transparent;
+}
+
+#menu li:focus:not(.disable),
+#menu li:hover:not(.disable) {
+	background-color: rgba(255,255,255,.0625);
+}
+
+#menu li:focus:not(.disable) {
+	outline: none; /* TEMP */
+	border-left-color: yellow;
+}
+
+#menu li:hover:not(.disable) {
+	cursor: pointer;
+	color: crimson;
+	color: inherit;
+	border-left-color: crimson;
+}
+
+#menu li:active:not(.disable) {
+	border-left-color: mediumseagreen;
+}
+
+#menu li:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+#menu li:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#menu li.separate {
+	border-top: 1px dotted rgba(255,255,255,.5);
+}
+
+#menu li.disable {
+	color: rgba(255,255,255,.5);
+}
+
+#menu li span,
+#menu li small {
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+}
+
+#menu li span {
+	float: left;
+}
+#menu li small {
+	float: right;
+	opacity: .5;
+}
+
+#menu li small.warning {
+	float: right;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	margin: 8px 0 8px 8px;
+	color: rgb(32,32,32);
+	text-align: center;
+	border-radius: 100%;
+	background-color: yellow;
+	opacity: 1;
+}
+
+#frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2440px;
+	padding: 40px;
+	border-radius: 40px;
+	background-color: linen;
+	transform-origin: 0 0;
+	z-index: 1;
+}
+
+#lock {
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	width: 60px;
+	height: 60px;
+	z-index: 1;
+}
+
+#lock div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: inherit;
+	height: inherit;
+	border-radius: 100%;
+	transform: rotate(0deg);
+	transition: border-color .375s, border-radius .375s, transform .375s;
+	z-index: 1;
+}
+
+#lock span {
+	display:  table-cell;
+	position: relative;
+	width: inherit;
+	height: inherit;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	font-size: .875rem;
+	z-index: 4;
+}
+
+#lock div:before,
+#lock div:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	box-sizing: border-box;
+}
+
+#lock div:before {
+	top: 0;
+	left: 0;
+	border-width: 4px;
+	border-style: solid;
+	border-color: transparent;
+	background-color: crimson;
+	border-radius: inherit;
+	z-index: 3;
+}
+
+#lock div:after {
+	top: 0;
+	left: 0;
+	border: 0 solid transparent;
+	border-radius: 100%;
+	transition: top .375s, border-color .375s, border-width .375s;
+	z-index: 2;
+}
+
+#lock.locked div {
+	border-radius: 0;
+	transform: rotate(45deg);
+}
+
+#lock.locked span {}
+
+#lock.locked div:before {
+	border-color: lightcoral;
+}
+
+#lock.locked div:after {
+	top: -30px;
+	border-width: 4px;
+	border-color: lightcoral;
+}
+
+#backdrop {
+	position: relative;
+	width: 5760px; /* TEMP */
+	height: 3240px; /* TEMP */
+	top: -1080px; /* TEMP */
+	left: -1920px; /* TEMP */
+	transform-origin: 0 0;
+	transform: scale(1.0);
+	animation-duration: .25s;
+	animation-iteration-count: 1;
+	opacity: .0625;
+}
+
+@keyframes boing1 {
+	0%   {transform: scale(1.0);}
+	75%  {transform: scale(1.25);}
+	100% {transform: scale(1.0);}
+}
+
+@keyframes boing2 {
+	0%   {transform: scale(1.0);}
+	75%  {transform: scale(1.25);}
+	100% {transform: scale(1.0);}
+}
+
+@keyframes flash1 {
+	0%   {background-color: white; opacity: .5}
+	100% {background-color: transparent}
+}
+
+@keyframes flash2 {
+	0%   {background-color: white; opacity: .5}
+	100% {background-color: transparent}
+}
+
+@keyframes whirl1 {
+	0%   {transform: rotate(0deg);}
+	100% {transform: rotate(180deg);}
+}
+
+@keyframes whirl2 {
+	0%   {transform: rotate(0deg);}
+	100% {transform: rotate(180deg);}
+}
+
+#screenshot .wrapper {
+	border: 2px dashed rgba(255,255,255,.375);
+	background-color: rgba(255,255,255,.1875);
+}
+
+#help .wrapper {
+	padding: 1%;
+	color:  whitesmoke;
+	overflow-y: scroll;
+}
+
+#help .wrapper .row {
+	float: left;
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 0 15px;
+}
+
+@media screen and (max-width: 960px) {#help .wrapper .row {width: 100%;}}
+@media screen and (min-width: 961px) and (max-width: 1920px) {#help .wrapper .row {width: 50%;}}
+@media screen and (min-width: 1921px) {#help .wrapper .row {width: 33.333333333333333333333333333333%;}}
+
+#help .wrapper span {
+	font-size: 1.25rem;
+}
+
+#help .wrapper .command {
+	float: left;
+	width: 60%;
+	padding: 2px 0;
+}
+
+#help .wrapper .action {
+	float: right;
+	width: 40%;
+	margin: -2px;
+	padding: 5px 0;
+	color: mediumseagreen;
+	border: 1px solid mediumseagreen;
+	text-align: center;
+}
+
+#help .wrapper .input {
+	display: inline-block;
+	min-width: 16px;
+	padding: 2px 4px;
+	color: #333;
+	text-align: center;
+	border-radius: 4px;
+	border: 2px solid darkgrey;
+	background-color: whitesmoke;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.375);
+}
+
+#help .wrapper .key {}
+
+#help small {
+	color: silver;
+}
+
+#help hr {
+	clear: both;
+	border: 0;
+}
+
+#help figure {
+	text-align: center;
+	margin: 0;
+}
+
+#help img {
+	margin: 20px auto;
+}
+

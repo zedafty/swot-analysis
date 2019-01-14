@@ -1,0 +1,202 @@
+================================================================================
+--------------------------------------------------------------------------------
+# SWOT Analysis
+--------------------------------------------------------------------------------
+================================================================================
+
+  # Objectif
+    Outil méthodologique générique d'évaluation et de résolution de problèmes.
+
+  # Technologies
+    HTML, CSS, JavaScript
+
+  # Linguistique
+    [S]trengths             [F]orces
+    [W]eaknesses            [F]aiblesses
+    [O]pportunities         [O]pportunités
+    [T]hreats               [R]isques
+
+  # Fonctionnalités accessoires
+  ~ Sauvegarde locale (localstorage et/ou fichier)
+  ~ Export au format image (PNG et/ou JPEG)
+
+  # Librairies utilisées
+    HTML2Canvas [https://html2canvas.hertzen.com/]
+
+================================================================================
+--------------------------------------------------------------------------------
+# History
+--------------------------------------------------------------------------------
+================================================================================
+
+  Inspired on 2018 November 28th
+  Started on 2018 December 4th
+  Achieved on 2018 December 17th
+
+================================================================================
+--------------------------------------------------------------------------------
+# Todo
+--------------------------------------------------------------------------------
+================================================================================
+
+  ...
+
+================================================================================
+--------------------------------------------------------------------------------
+# Bugs
+--------------------------------------------------------------------------------
+================================================================================
+
+  ...
+
+================================================================================
+--------------------------------------------------------------------------------
+# Ideas
+--------------------------------------------------------------------------------
+================================================================================
+
+  ? delete sheet on toolbar
+  ? scroll label when box content larger than screen
+  ? save settings
+    > backdrop
+    > position
+
+================================================================================
+--------------------------------------------------------------------------------
+# Renaming
+--------------------------------------------------------------------------------
+================================================================================
+
+  ...
+
+================================================================================
+--------------------------------------------------------------------------------
+# Controls
+--------------------------------------------------------------------------------
+================================================================================
+
+  Command                                         Action
+
+  Hold Left Mouse Button (on sheet)               Drag
+  Hold Left Mouse Button (anywhere else)          Move
+
+  Hold Shift + Mouse Move Left/Right              Zoom Out/In
+  Hold Space + Mouse Move                         Move
+  Hold Ctrl                                       Edit Mode
+
+  Hold Shift + Mouse Wheel Up/Down                Zoom Max/Min
+  Roll Mouse Wheel Up/Down                        Zoom In/Out
+
+  Keypad Plus                                     Zoom In
+  Keypad Minus                                    Zoom Out
+  Keypad Star or F                                Lock Frame On Screen
+
+  Key H or F1                                     Show [H]elp
+  Key R or F2                                     Show [R]oster
+  Key M or Key O                                  Open [M]enu
+  Key E                                           Toggle [E]dit Mode
+  Key S                                           Take [S]creenshot
+  Key C                                           [C]enter Frame On Screen
+  Keypad Slash                                    Reset Frame View (center at 100%)
+
+================================================================================
+--------------------------------------------------------------------------------
+# Dimensions
+--------------------------------------------------------------------------------
+================================================================================
+
+  min = 6 x 3
+  max = 6 x Infinity
+
+  min L = 180 x 6 (sheet) + 20 (padding) = 1100
+  min H = 180 (title) + 3 x 180 (sheet) + 20 (padding) = 740
+
+================================================================================
+--------------------------------------------------------------------------------
+# Storage
+--------------------------------------------------------------------------------
+================================================================================
+
+"{\"topic\":\"Let Blaine Die?\",\"pool\":[\"Blaine shits pants from fear, pants discovered upon death\",\"A dead Blaine is a Blaine that can't reproduce\",\"Blaines last moment is realizing his face is gone\",\"Web traffic goes viral\",\"One less guy named Blaine\",\"Death captured in high-resolution slow motion holds up on repeated viewing\",\"Blaine is dead\",\"Blaine is no longer alive\",\"Ugly can car blood soaked and totalled\",\"Sense of accomplishment\",\"Fulfilling what would Satan do?\",\"After hitting building, flat bill of cap might actually bend\",\"Saves assholes from making mistakes in math\",\"As a giant douche, Blaine tormented eternally in hell\",\"Impress hot satanist chicks by boasting about Blaine's death (Gilfoyle only)\",\"Blaine dies super fast\",\"Blaine's blood has AIDS and gets on kids\",\"Gina marries Blaine in hospital out of grief\",\"People wear t-shirts with Blaine's face on them\",\"Building is structurally damaged\",\"Gina kills self out of grief\",\"Blaine's funeral televised preempts 'Star Trek: TNG' marathon\",\"Gina enters convent out of grief\",\"Unfortunate window washers must clean blood off building\",\"Blaine dies slow but we can't see it because only family allowed in hospital\",\"Fuck Gina\",\"Grief threesome with Gina and Blaine's hot mom ?\",\"Digging up Blaine's grave, dishonoring remains again\",\"Gina needs consoling\",\"Defecating on Blaine's grave\",\"Birds get to eat pieces of Blaine\",\"Carbon footprint reduced by one Blaine\",\"Blaine's organs harvested for hot girls with cancer who then gratitude-fuck us\",\"Death leads to regulations on stunt industry – lives saved\",\"Dishonoring Blaine's remains by putting funny hat on body, dragging it behind car\",\"Urinating on Blaine's grave\",\"Take his wallet and shoes if not too bloody\",\"Masturbating on Blaine's grave\",\"Ejaculation\",\"Over time Gina becomes more clingy and less hot\",\"Investigation and trial sets back Pied Piper build\",\"We can only watch him die once\",\"Vengeful Blaine supporters accuse us of criminal negligence\",\"After this nothing is ever as much fun again\",\"People find out and in YouTube death video, we get flamed in the comments section\",\"Guilt (Dinesh only)\",\"Philz Coffee closes for a day to honor Blaine's memory\"],\"str\":[\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\"This is some unusually not very long textual content.\"],\"wkn\":[\"A\",\"B\",\"C\",\"D\",\"E\"],\"opp\":[\"A\",\"B\",\"C\"],\"thr\":[]}"
+
+================================================================================
+--------------------------------------------------------------------------------
+# References
+--------------------------------------------------------------------------------
+================================================================================
+
+  Silicon Valley Season 2 - Jared Dunn explains what is SWOT Analysis to the team - YouTube
+  https://www.youtube.com/watch?v=XfB0g_JDIds
+
+  Silicon Valley: let Blaine die - YouTube
+  https://www.youtube.com/watch?v=pXA4sab1eKE
+
+  Check Out The Full ‘Let Blaine Die’ SWOT Board From ‘Silicon Valley’
+  https://uproxx.com/tv/check-out-the-full-let-blaine-die-swot-board-from-silicon-valley/
+
+  Silicon Valley: Read every card on the 'Let Blaine Die' board | EW.com
+  https://ew.com/article/2015/05/15/silicon-valley-read-let-blaine-die-swot-board/
+
+================================================================================
+--------------------------------------------------------------------------------
+# Real Example
+--------------------------------------------------------------------------------
+================================================================================
+
+  << Let Blaine Die >>
+
+  [S]trengths
+    Blaine shits pants from fear, pants discovered upon death
+    A dead Blaine is a Blaine that can't reproduce
+    Blaines last moment is realizing his face is gone
+    Web traffic goes viral
+    One less guy named Blaine
+    Death captured in high-resolution slow motion holds up on repeated viewing
+    Blaine is dead
+    Blaine is no longer alive
+    Ugly can car blood soaked and totalled
+    Sense of accomplishment
+    Fulfilling what would Satan do?
+    After hitting building, flat bill of cap might actually bend
+    Saves assholes from making mistakes in math
+    As a giant douche, Blaine tormented eternally in hell
+    Impress hot satanist chicks by boasting about Blaine's death (Gilfoyle only)
+
+  [W]eaknesses
+    Blaine dies super fast
+    Blaine's blood has AIDS and gets on kids
+    Gina marries Blaine in hospital out of grief
+    People wear t-shirts with Blaine's face on them
+    Building is structurally damaged
+    Gina kills self out of grief
+    Blaine's funeral televised preempts 'Star Trek: TNG' marathon
+    Gina enters convent out of grief
+    Unfortunate window washers must clean blood off building
+    Blaine dies slow but we can't see it because only family allowed in hospital
+
+  [O]pportunities
+    Fuck Gina
+    Grief threesome with Gina and Blaine's hot mom ?
+    Digging up Blaine's grave, dishonoring remains again
+    Gina needs consoling
+    Defecating on Blaine's grave
+    Birds get to eat pieces of Blaine
+    Carbon footprint reduced by one Blaine
+    Blaine's organs harvested for hot girls with cancer who then gratitude-fuck us
+    Death leads to regulations on stunt industry – lives saved
+    Dishonoring Blaine's remains by putting funny hat on body, dragging it behind car
+    Urinating on Blaine's grave
+    Take his wallet and shoes if not too bloody
+    Masturbating on Blaine's grave
+    Ejaculation
+
+  [T]hreats
+    Over time Gina becomes more clingy and less hot
+    Investigation and trial sets back Pied Piper build
+    We can only watch him die once
+    Vengeful Blaine supporters accuse us of criminal negligence
+    After this nothing is ever as much fun again
+    People find out and in YouTube death video, we get flamed in the comments section
+    Guilt (Dinesh only)
+    Philz Coffee closes for a day to honor Blaine's memory
+

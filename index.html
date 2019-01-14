@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SWOT</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="src/style.css">
+	</head>
+	<body>
+
+		<!-- Automove Bounds TEST -->
+		<!-- <div style="pointer-events: none; position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: 80px solid rgba(255,255,0,.125); z-index: 1000;"></div> -->
+
+		<!-- Sheet -->
+		<div class="sheet" id="sheet" style="display: none;"></div>
+
+		<!-- Label -->
+		<div id="label">
+			<div id="bubble" style="display: none;">
+				<input id="record" type="text" disabled="disabled">
+				<button id="commit" class="button" style="display: none;"><span>v</span></button>
+				<button id="cancel" class="button" style="display: none;"><span>&times;</span></button>
+			</div>
+			<span class="stalk" style="display: none;"></span>
+			<div class="outer"><span class="inner"></span></div>
+		</div>
+
+		<!-- Topic -->
+		<h1 id="topic">Let Blaine Die?</h1>
+
+		<!-- Bulb -->
+		<button id="bulb" class="button">
+			<span>
+				<svg width="50" height="50" viewBox="0 0 50 50">
+					<path d="m25 0c-8.2843 0-15 7-15 15s9 21 9 21h12s9-13 9-21-6.7157-15-15-15zm-3.0156 15.986c0.56375-0.008805 1.0233 0.4499 1.0156 1.0137v2h1v-2c-0.0076-0.55153 0.43286-1.0051 0.98438-1.0137 0.56375-0.008805 1.0233 0.4499 1.0156 1.0137v2h1v-2c-0.0076-0.55153 0.43286-1.0051 0.98438-1.0137 0.56375-0.008805 1.0233 0.4499 1.0156 1.0137v2h4.3867l-4.4375 13.316c-0.42168 1.266-2.3201 0.6332-1.8984-0.63281l3.5605-10.684h-1.6113v2c0.01912 1.3523-2.0191 1.3523-2 0v-2h-1v2c0.01912 1.3523-2.0191 1.3523-2 0v-2h-1v2c0.01912 1.3523-2.0191 1.3523-2 0v-2h-1.6113l3.5605 10.684c0.42226 1.2658-1.4762 1.8986-1.8984 0.63281l-4.4375-13.316h4.3867v-2c-0.0076-0.55153 0.43286-1.0051 0.98438-1.0137zm-3.9844 22.014-1 1 1 1-1 1 1 1-1 1 1 1-1 1 2 1 1 2h2s1 2 3 2 3-2 3-2h2l1-2 2-1-1-1 1-1-1-1 1-1-1-1 1-1-1-1z"/>
+				</svg>
+			</span>
+		</button>
+
+		<!-- Roster -->
+		<div id="roster" style="display: none;">
+
+			<!-- Slider -->
+			<div id="slider"></div>
+
+			<div class="list">
+				<div id="pool" class="panel">
+					<!-- Strenghts -->
+					<div class="sheet"><span>Blaine shits pants from fear, pants discovered upon death</span></div>
+					<div class="sheet"><span>A dead Blaine is a Blaine that can't reproduce</span></div>
+					<div class="sheet"><span>Blaines last moment is realizing his face is gone</span></div>
+					<div class="sheet"><span>Web traffic goes viral</span></div>
+					<div class="sheet"><span>One less guy named Blaine</span></div>
+					<div class="sheet"><span>Death captured in high-resolution slow motion holds up on repeated viewing</span></div>
+					<div class="sheet"><span>Blaine is dead</span></div>
+					<div class="sheet"><span>Blaine is no longer alive</span></div>
+					<div class="sheet"><span>Ugly can car blood soaked and totalled</span></div>
+					<div class="sheet"><span>Sense of accomplishment</span></div>
+					<div class="sheet"><span>Fulfilling what would Satan do?</span></div>
+					<div class="sheet"><span>After hitting building, flat bill of cap might actually bend</span></div>
+					<div class="sheet"><span>Saves assholes from making mistakes in math</span></div>
+					<div class="sheet"><span>As a giant douche, Blaine tormented eternally in hell</span></div>
+					<div class="sheet"><span>Impress hot satanist chicks by boasting about Blaine's death (Gilfoyle only)</span></div>
+					<!-- Weaknesses -->
+					<div class="sheet"><span>Blaine dies super fast</span></div>
+					<div class="sheet"><span>Blaine's blood has AIDS and gets on kids</span></div>
+					<div class="sheet"><span>Gina marries Blaine in hospital out of grief</span></div>
+					<div class="sheet"><span>People wear t-shirts with Blaine's face on them</span></div>
+					<div class="sheet"><span>Building is structurally damaged</span></div>
+					<div class="sheet"><span>Gina kills self out of grief</span></div>
+					<div class="sheet"><span>Blaine's funeral televised preempts 'Star Trek: TNG' marathon</span></div>
+					<div class="sheet"><span>Gina enters convent out of grief</span></div>
+					<div class="sheet"><span>Unfortunate window washers must clean blood off building</span></div>
+					<div class="sheet"><span>Blaine dies slow but we can't see it because only family allowed in hospital</span></div>
+					<!-- Opportunities -->
+					<div class="sheet"><span>Fuck Gina</span></div>
+					<div class="sheet"><span>Grief threesome with Gina and Blaine's hot mom ?</span></div>
+					<div class="sheet"><span>Digging up Blaine's grave, dishonoring remains again</span></div>
+					<div class="sheet"><span>Gina needs consoling</span></div>
+					<div class="sheet"><span>Defecating on Blaine's grave</span></div>
+					<div class="sheet"><span>Birds get to eat pieces of Blaine</span></div>
+					<div class="sheet"><span>Carbon footprint reduced by one Blaine</span></div>
+					<div class="sheet"><span>Blaine's organs harvested for hot girls with cancer who then gratitude-fuck us</span></div>
+					<div class="sheet"><span>Death leads to regulations on stunt industry – lives saved</span></div>
+					<div class="sheet"><span>Dishonoring Blaine's remains by putting funny hat on body, dragging it behind car</span></div>
+					<div class="sheet"><span>Urinating on Blaine's grave</span></div>
+					<div class="sheet"><span>Take his wallet and shoes if not too bloody</span></div>
+					<div class="sheet"><span>Masturbating on Blaine's grave</span></div>
+					<div class="sheet"><span>Ejaculation</span></div>
+					<!-- Threats -->
+					<div class="sheet"><span>Over time Gina becomes more clingy and less hot</span></div>
+					<div class="sheet"><span>Investigation and trial sets back Pied Piper build</span></div>
+					<div class="sheet"><span>We can only watch him die once</span></div>
+					<div class="sheet"><span>Vengeful Blaine supporters accuse us of criminal negligence</span></div>
+					<div class="sheet"><span>After this nothing is ever as much fun again</span></div>
+					<div class="sheet"><span>People find out and in YouTube death video, we get flamed in the comments section</span></div>
+					<div class="sheet"><span>Guilt (Dinesh only)</span></div>
+					<div class="sheet"><span>Philz Coffee closes for a day to honor Blaine's memory</span></div>
+				</div>
+			</div>
+
+			<!-- Toolbar -->
+			<div id="toolbar">
+				<button id="create" class="button">
+					<span>
+						<svg width="50" height="50" viewBox="0 0 50 50">
+							<path d="m33 5v12h12zm-25 1c-1 0-2 1-2 2v34c0 1 1 2 2 2h34c1 0 2-1 2-2v-23h-13v-13z"/>
+						</svg>
+					</span>
+				</button>
+				<button id="edit" class="button">
+					<span>
+						<svg width="50" height="50" viewBox="0 0 50 50">
+							<path d="m39.184 5.0156c-1.7868-0.0031-3.6004 0.91682-5.1914 2.5078l-21.922 21.92c1e-6 0 2.1227-0.70741 5.6582 2.8281 3.5355 3.5355 2.8281 5.6582 2.8281 5.6582l21.92-21.922c2.8284-2.8284 3.5355-6.363 0.70703-9.1914-1.2374-1.2374-2.6103-1.7984-4-1.8008zm-26.67 26.285c-0.7955-0.08839-1.1504 0.26367-1.1504 0.26367-5.6569 5.6569-6.3633 13.436-6.3633 13.436s7.7787-0.70643 13.436-6.3633c0 0 1.4144-1.4156-2.1211-4.9512-1.7678-1.7678-3.0053-2.2964-3.8008-2.3848z"/>
+						</svg>
+					</span>
+				</button>
+			</div>
+
+		</div>
+
+		<!-- Tribar -->
+		<button id="tribar" class="button">
+			<span>
+				<svg width="50" height="50" viewBox="0 0 50 50">
+					<path d="m6 6v8h38v-8zm0 15v8h38v-8zm0 15v8h38v-8z"/>
+				</svg>
+			</span>
+		</button>
+
+		<!-- Menu -->
+		<ul id="menu" style="display: none;">
+			<li class="disable" data-action="cancel"><span>Cancel</span> <small>Ctrl+Z</small></li>
+			<li tabindex="0" class="separate" data-action="erase"><span>Erase All</span></li>
+			<li tabindex="0" data-action="clear-storage"><span>Clear storage</span> <small class="warning">!</small></li>
+			<li tabindex="0" class="separate" data-action="take-screenshot"><span>Take screenshot</span> <small>S</small></li>
+			<li tabindex="0" class="separate" data-action="help"><span>Help</span> <small>F1</small></li>
+		</ul>
+
+		<!-- Delete -->
+		<div id="delete" style="display: none;">
+			<button class="button">
+				<span>
+					<svg width="50" height="50" viewBox="0 0 50 50">
+						<path d="m20 0c-2 0-2 2-2 2v2h-9c-4 0-4 4-4 4v2h40v-2s0-4-4-4h-9v-2s0-2-2-2zm-14 12v3s2 29 3 32 3 3 4 3h24c0.99966-0.02594 3 0 4-3s3-32 3-32v-3zm9 5c1.108 0 2 0.892 2 2v24c0 1.108-0.892 2-2 2s-2-0.892-2-2v-24c0-1.108 0.892-2 2-2zm10 0c1.108 0 2 0.892 2 2v24c0 1.108-0.892 2-2 2s-2-0.892-2-2v-24c0-1.108 0.892-2 2-2zm10 0c1.108 0 2 0.892 2 2v24c0 1.108-0.892 2-2 2s-2-0.892-2-2v-24c0-1.108 0.892-2 2-2z"/>
+					</svg>
+				</span>
+			</button>
+		</div>
+
+		<!-- Frame -->
+		<div id="frame">
+			<div class="panel" id="str">
+				<h2>Strenghts</h2>
+				<!-- TEST -->
+				<div class="sheet"><span>MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM</span></div>
+				<div class="sheet"><span>** DELETE.ME ** Take that 'MMM...' sheet and drag it in the upper right corner</span></div>
+				<div class="sheet"><span>** CREATE.ZEE ** Press F2 or R then click on the bottom left button</span></div>
+				<div class="sheet"><span>** EDIT.DHAT ** Press Ctrl or E then click on anything hilited</span></div>
+			</div>
+			<div class="panel" id="wkn">
+				<h2>Weaknesses</h2>
+			</div>
+			<div class="panel" id="opp">
+				<h2>Opportunities</h2>
+			</div>
+			<div class="panel" id="thr">
+				<h2>Threats</h2>
+			</div>
+		</div>
+
+		<!-- Lock -->
+		<div id="lock">
+			<span id="scale"></span>
+			<div></div>
+		</div>
+
+		<!-- Backdrop -->
+		<div id="backdrop"></div>
+
+		<!-- Screenshot -->
+		<div id="screenshot" class="modal" style="display: none;" tabindex="0">
+			<div class="caption"><span></span></div>
+			<div class="wrapper"><canvas></canvas></div>
+			<button class="button close"><span>&times;</span></button>
+		</div>
+
+		<!-- Help -->
+		<div id="help" class="modal" style="display: none;" tabindex="0">
+			<div class="caption"><span>Help</span></div>
+			<div class="wrapper">
+
+				<div class="row"><span class="command">Hold <span class="input">LMB</span> <small>(on sheet)</small></span> <span class="action">Drag</span></div>
+				<div class="row"><span class="command">Hold <span class="input">LMB</span> <small>(anywhere else)</small></span> <span class="action">Move</span></div>
+
+				<div class="row"><span class="command">Hold <span class="input">Shift</span> + Mouse Move</span> <span class="action">Zoom Out/In</span></div>
+				<div class="row"><span class="command">Hold <span class="input">Space</span> + Mouse Move</span> <span class="action">Move</span></div>
+				<div class="row"><span class="command">Hold <span class="input">Ctrl</span></span> <span class="action">Edit</span></div>
+
+				<div class="row"><span class="command">Hold <span class="input">Shift</span> + Mouse Wheel</span> <span class="action">Zoom Max/Min</span></div>
+				<div class="row"><span class="command">Mouse Wheel</span> <span class="action">Zoom In/Out</span></div>
+
+				<div class="row"><span class="command">Press Keypad <span class="input">+</span></span> <span class="action">Zoom In</span></div>
+				<div class="row"><span class="command">Press Keypad <span class="input">-</span></span> <span class="action">Zoom Out</span></div>
+				<div class="row"><span class="command">Press Keypad <span class="input">*</span> or <span class="input">F</span></span> <span class="action">Lock Frame</span></div>
+
+				<div class="row"><span class="command">Press <span class="input">H</span> or <span class="input">F1</span></span> <span class="action"><span class="key">H</span>elp</span></div>
+				<div class="row"><span class="command">Press <span class="input">R</span> or <span class="input">F2</span></span> <span class="action"><span class="key">R</span>oster</span></div>
+				<div class="row"><span class="command">Press <span class="input">M</span> or <span class="input">O</span></span> <span class="action"><span class="key">M</span>enu</span></div>
+				<div class="row"><span class="command">Press <span class="input">E</span></span> <span class="action"><span class="key">E</span>dit Mode</span></div>
+				<div class="row"><span class="command">Press <span class="input">S</span></span> <span class="action"><span class="key">S</span>creenshot</span></div>
+				<div class="row"><span class="command">Press <span class="input">C</span></span> <span class="action"><span class="key">C</span>enter Frame</span></div>
+				<div class="row"><span class="command">Press Keypad <span class="input">/</span> </span> <span class="action">Frame 100%</span></div>
+
+				<hr>
+
+				<figure>
+					<a href="http://www.piedpiper.com/"><img src="img/pied_piper.png" alt="Pied Piper Logo" width="200" height="200"></a>
+				</figure>
+
+			</div>
+			<button class="button close"><span>&times;</span></button>
+		</div>
+
+		<!-- Scripts -->
+		<script src="src/config.js"></script>
+		<script src="src/basis.js"></script>
+		<script src="src/store.js"></script>
+		<script src="src/input.js"></script>
+		<script src="src/label.js"></script>
+		<script src="src/frame.js"></script>
+		<script src="src/panel.js"></script>
+		<script src="src/sheet.js"></script>
+		<script src="src/roster.js"></script>
+		<script src="src/menu.js"></script>
+		<script src="src/modal.js"></script>
+		<script src="lib/html2canvas.min.js"></script>
+
+	</body>
+<html>
+

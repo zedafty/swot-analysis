@@ -1,0 +1,11 @@
+<svg id="backdrop" width="40" height="40" version="1.1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+		<g id="grid" fill="#fff">
+				<rect id="rect1-1" x="38" width="2" height="40"/>
+				<rect id="rect1-2" y="38" width="40" height="2"/>
+				<g fill-opacity=".5">
+						<rect id="rect1-3" y="19" width="40" height="1"/>
+						<rect id="rect1-4" x="19" width="1" height="19"/>
+						<rect id="rect1-5" x="19" y="20" width="1" height="18"/>
+				</g>
+		</g>
+</svg>
