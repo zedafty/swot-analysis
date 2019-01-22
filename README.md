@@ -1,10 +1,10 @@
 ## SWOT Analysis
 
-Generic methodological issue assessment and solving tool.
+  Generic methodological issue assessment and solving tool.
 
-### Current stage
+### Current status
 
-  * standby
+  * complete
 
 ### Current milestone
 

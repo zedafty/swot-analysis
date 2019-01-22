@@ -4,23 +4,22 @@
 --------------------------------------------------------------------------------
 ================================================================================
 
-  # Objectif
-    Outil méthodologique générique d'évaluation et de résolution de problèmes.
+  # Description
+    Generic methodological issue assessment and solving tool. | Outil méthodologique générique d'évaluation et de résolution de problèmes.
+
+  # Tags
+    ui-testing web-tool methodology javascript
 
   # Technologies
     HTML, CSS, JavaScript
 
-  # Linguistique
-    [S]trengths             [F]orces
-    [W]eaknesses            [F]aiblesses
-    [O]pportunities         [O]pportunités
-    [T]hreats               [R]isques
+  # Features
+    List of ideas
+    Dragable and dropable sheets
+  ~ Local autosave (localstorage and/or file)
+  ~ Image format export (PNG and/or JPEG)
 
-  # Fonctionnalités accessoires
-  ~ Sauvegarde locale (localstorage et/ou fichier)
-  ~ Export au format image (PNG et/ou JPEG)
-
-  # Librairies utilisées
+  # Libraries
     HTML2Canvas [https://html2canvas.hertzen.com/]
 
 ================================================================================
@@ -29,9 +28,20 @@
 --------------------------------------------------------------------------------
 ================================================================================
 
-  Inspired on 2018 November 28th
-  Started on 2018 December 4th
-  Achieved on 2018 December 17th
+  Inspired on 2018 November, 28th
+  Started on 2018 December, 4th
+  Achieved on 2018 December, 17th
+
+================================================================================
+--------------------------------------------------------------------------------
+# Linguistic
+--------------------------------------------------------------------------------
+================================================================================
+
+  [S]trengths             [F]orces
+  [W]eaknesses            [F]aiblesses
+  [O]pportunities         [O]pportunités
+  [T]hreats               [R]isques
 
 ================================================================================
 --------------------------------------------------------------------------------
