@@ -2,11 +2,11 @@
 
   Generic methodological issue assessment and solving tool.
 
-### Current status
+### Status
 
-  * complete
+  * achieved 2018-12-17
 
-### Current milestone
+### Milestone
 
   * beta
 
